@@ -1,28 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-* {
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    color: #3D3D3D;
+@font-face {
+    font-family: "CeraPro";
+    src: url(fonts/CeraPro-Regular.woff2);
+    font-weight: normal;
 }
 
-.body{
+@font-face {
+    font-family: "CeraPro";
+    src: url(fonts/CeraPro-Bold.woff2);
+    font-weight: bold;
+}
+
+* {
     margin: 0;
 }
 
+.body{
+    box-sizing: border-box;
+    font-family: "CeraPro", sans-serif;
+    color: #3D3D3D;
+}
+
 .wraper{
-width: 1300px;
+width: 1232px;
 margin: 0 auto;
 }
 
 .categories{
-    width: 310px;
+    width: 292px;
     background-color: #FBFBFB;
     padding-left: 18px;
     padding-top: 14px;
     float: left;
-    margin-right: 50px;
+    margin-right: 36px;
 }
 
 .list{
@@ -34,6 +43,10 @@ margin: 0 auto;
     font-size: 15px;
 }
 
+.list li:hover{
+    color: #46A358;
+}
+
 .saleimg{
     margin-left: -15px;
     padding-top: 377px;
@@ -43,37 +56,38 @@ margin: 0 auto;
     font-weight: bold;
     font-size: 18px;
     line-height: 16px;
-}
-
-.houseplants{
-    color: #46A358;
+    padding-left: 18px;
+    margin-bottom: 7px;
 }
 
 .navigation{
     font-size: 15px;
     line-height: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .elem{
-    padding-right: 40px;
+    text-decoration: none;
+    color: #3D3D3D;
+    padding-right: 37px;
 }
 
-.sort{
-    padding-left: 345px;
-}
-
-.allplants{
+.elem:hover{
     color: #46A358;
 }
 
+.sort{
+    padding-left: 370px;
+}
+
 .goods{
-    width: 880px;
     padding-top: 38px;
 }
 
 .main{
     float: left;
-    width: 900px;
+    width: 872px;
 }
 
 .background{
@@ -86,20 +100,23 @@ margin: 0 auto;
     width: 258px;
     height: 350px;
     float: left;
-    margin-right: 33px;
     margin-bottom: 70px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .price{
     color: #46A358;
     font-size: 18px;
     font-weight: bold;
-    line-height: 6px;
+    line-height: 16px;
 }
 
 .name{
     font-size: 16px;
-    line-height: 12px;
+    line-height: 16px;
+    margin-bottom: 6px;
+    margin-top: 12px;
 }
 
 .img{
@@ -109,14 +126,16 @@ margin: 0 auto;
 
 .pages{
     float: right;
-    margin-right: 100px;
+    padding-right: 32px;
 }
 
 .square{
+    text-decoration: none;
+    color: #3D3D3D;
     border: 1px solid #E5E5E5;
     border-radius: 5px;
     min-width: 35px;
-    height: 35px;
+    height: 29px;
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -124,7 +143,7 @@ margin: 0 auto;
     font-size: 18px;
 }
 
-.active{
+.square:hover{
     background-color: #46A358;
-    color: #FFFFFF;
+    color: white;
 }
